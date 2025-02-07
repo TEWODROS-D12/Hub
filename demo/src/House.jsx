@@ -1,8 +1,9 @@
-import React from "react";
-import { usePower } from "./PowerContext";
+import React,{ useContext } from "react";
+
+import { PowerContext } from "./PowerContext";
 
 export default function House() {
-    const { power, setPower, bgColor, changeBackground } = usePower();
+    const { power, setPower, bgColor, changeBackground } = useContext(PowerContext);
 
 
 
